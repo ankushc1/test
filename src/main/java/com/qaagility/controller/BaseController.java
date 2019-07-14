@@ -18,18 +18,18 @@ public class BaseController {
 
 	private static int counter = 0;
 	private static final String VIEW_INDEX = "index";
-	private final static org.slf4j.Logger logger = LoggerFactory.getLogger(BaseController.class);
-	
+	private final static org.slf4j.Logger LOGGER = LoggerFactory.getLogger(BaseController.class);
+
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
-		
+
 
 		model.addAttribute("message", "Welcome - " + dateFormat.format(date));
 		model.addAttribute("counter", ++counter);
-		logger.debug("[welcome] counter : {}", counter);
+		LOGGER.debug("[welcome] counter : {}", counter);
 
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
@@ -41,7 +41,7 @@ public class BaseController {
 
 		model.addAttribute("message", "Welcome - " + name + " - " + dateFormat.format(date));
 		model.addAttribute("counter", ++counter);
-		logger.debug("[welcomeName] counter : {}", counter);
+		LOGGER.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
 
 	}
