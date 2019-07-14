@@ -1,0 +1,8 @@
+Selenium Dependencies
+		<selenium.version>3.13.0</selenium.version>
+	
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
