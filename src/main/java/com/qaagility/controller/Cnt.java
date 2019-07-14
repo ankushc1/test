@@ -1,12 +1,12 @@
 package com.qaagility.controller;
 
-public class Cnt {
+public class Count {
 
-    public int d(int a, int b) {
-        if (b == 0)
+    public int (int first, int second) {
+        if (second == 0)
             return Integer.MAX_VALUE;
         else
-            return a / b;
+            return first / second;
     }
 
 }
