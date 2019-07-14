@@ -1,11 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.qaagility</groupId>
 	<artifactId>CounterWebApp</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>CounterWebApp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
@@ -96,7 +96,7 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
-			
+
 			<!-- Set JDK Compiler Level -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -131,7 +131,7 @@
         			</configuration>
 
       			</plugin>
-			
+
 			<!-- Cobertura plugin -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -159,7 +159,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			 <plugin>
  		               <groupId>org.apache.maven.plugins</groupId>
  		               <artifactId>maven-pmd-plugin</artifactId>
@@ -179,14 +179,14 @@
 						</goals>
 					</execution>
 				</executions>
- 		           </plugin>		
+ 		           </plugin>
 
 
 
 		</plugins>
 
 	</build>
-	
+
 	<reporting>
 		<plugins>
 			<!-- Normally, we take off the dependency report, saves time. -->
@@ -231,14 +231,14 @@
  	    </plugins>
 	  </reporting>
 
-	
+
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>devops-training-snapshots</name>    
+        <name>devops-training-snapshots</name>
         <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
 
-	
+
 </project>
