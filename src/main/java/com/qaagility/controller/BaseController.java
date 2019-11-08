@@ -31,7 +31,7 @@ public class BaseController {
 		model.addAttribute("counter", ++counter);
 		LOGGER.debug("[welcome] counter : {}", counter);
 
-		// Spring uses InternalResourceViewResolver  and return back index.jsp
+		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
 
 	}
